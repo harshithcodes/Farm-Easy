@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>FARM EASY</title>
+	<script>
+		var now = new Date();
+		</script>
+
+	<!-- Loading third party fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Loading main css file -->
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w_style.css">
+
+	<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+</head>
+  <!--header-->
+  <header class="header">
+    <a class="logo" href="index.html" style="padding:0px;">
+        <img src="logo1.png">
+    </a>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    <nav class="navbar">
+        <a href="D:/mini projects/FARM_EASY/index.html">home</a>
+        <a href="D:/mini projects/FARM_EASY/index.html#features">Services</a>
+        <a href="D:/mini projects/FARM_EASY/index.html#aboutus">About Us</a>
+        <a href="D:/mini projects/FARM_EASY/index.html#footer">Contact Us</a>
+    </nav>
+    
+    
+</header>
+    <!--header ends-->
+    <!--home starts-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Farming is a<span> Profession </span>of Hope.</h3>
+            
+        </div>
+    </section>
+    
+
+<body>
+    
+<div class="hero" style="background-color:#fff;">
+    <h1 class="heading">Weather<span>forecast</span></h1>
+
+    <div class="container">
+        <form action="#" class="find-location">
+            <input type="text" placeholder="Find your location..." id="searchBar">
+            <input type="submit" value="Find" id="searchBtn" onclick="GetInfo()">
+        </form>
+
+    </div>
+    <div class="forecast-table">
+        <div class="container">
+            <div class="forecast-container">
+                <div class="today forecast">
+                    <div class="forecast-header">
+                        <div class="day" id="day1">Monday</div>
+                        <div class="date" id = "date1"></div>
+                    </div> <!-- .forecast-header -->
+                    <div class="forecast-content">
+                        <div class="location" id="city">Weather in Delhi</div>
+                        <div class="degree">
+                            <div class="num" id="temperature1">23<sup>o</sup>C</div>
+                            <div class="forecast-icon">
+                                <img src="https://openweathermap.org/img/wn/04n.png" id="icon1" alt="" width=90>
+                            </div>
+                        </div>
+                        <div class="minValues" id="day1Min">Loading...</div>
+                        <div class="maxValues" id="day1Max">Loading...</div>
+                        <div class="wind" id="windSpeed1">Loading</div>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day" id="day2">	Tuesday</div>
+                    </div> <!-- .forecast-header -->
+                    <div class="forecast-content">
+                        <div class="forecast-icon">
+                            <img src="https://openweathermap.org/img/wn/04n.png" alt="" width=48 id="icon2">
+                        </div>
+                        <div class="num" id="temperature2">23<sup>o</sup>C</div>
+                        <div class="minValues" id="day2Min">Loading...</div>
+                        <div class="maxValues" id="day2Max">Loading...</div>
+                        <div class="wind" id="windSpeed2">Loading</div>
+
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day" id="day3">Wednesday</div>
+                    </div> <!-- .forecast-header -->
+                    <div class="forecast-content">
+                        <div class="forecast-icon">
+                            <img src="https://openweathermap.org/img/wn/04n.png" alt="" width=48 id="icon3">
+                        </div>
+                        <div class="num" id="temperature3">23<sup>o</sup>C</div>
+                        <div class="minValues" id="day3Min">Loading...</div>
+                        <div class="maxValues" id="day3Max">Loading...</div>
+                        <div class="wind" id="windSpeed3">Loading</div>
+
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day" id="day4">Thursday</div>
+                    </div> <!-- .forecast-header -->
+                    <div class="forecast-content">
+                        <div class="forecast-icon">
+                            <img src="https://openweathermap.org/img/wn/04n.png" alt="" width=48 id="icon4">
+                        </div>
+                        <div class="num" id="temperature4">23<sup>o</sup>C</div>
+                        <div class="minValues" id="day4Min">Loading...</div>
+                        <div class="maxValues" id="day4Max">Loading...</div>
+                        <div class="wind" id="windSpeed4">Loading</div>
+
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day" id="day5">Friday</div>
+                    </div> <!-- .forecast-header -->
+                    <div class="forecast-content">
+                        <div class="forecast-icon">
+                            <img src="https://openweathermap.org/img/wn/04n.png" alt="" width=48 id="icon5">
+                        </div>
+                        <div class="num" id="temperature5">23<sup>o</sup>C</div>
+                        <div class="minValues" id="day5Min">Loading...</div>
+                        <div class="maxValues" id="day5Max">Loading...</div>
+                        <div class="wind" id="windSpeed5">Loading</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <h1 id="temperatureMap"><b>Weather Map</b></h1>
+
+
+
+			<center> <iframe width="900" height="550" src="https://embed.windy.com/embed2.html?lat=12.496&lon=75.954&detailLat=12.976&detailLon=75.955&width=650&height=450&zoom=8&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=default&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe></center>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Script-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/scrolling.js"></script>
+	<script src="js/w_script.js"></script>
+
+
+
+</body>
+
+</html>
