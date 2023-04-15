@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16">
-  <title>forum</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="style.css">
+<link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16">
+<title>forum</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+  <script src="script.js"></script>
 </head>
+ <!--header-->
+ <header class="header">
+  <a class="logo" href="index.html" style="padding:0px;">
+      <img src="D:\mini projects\FARM EASY\logo1.png">
+  </a>
+  <div class="icons">
+      <div class="fas fa-bars" id="menu-btn"></div>
+  </div>
+  <nav class="navbar">
+      <a href="D:/mini projects/FARM_EASY/index.html">home</a>
+      <a href="D:/mini projects/FARM_EASY/index.html#features">Services</a>
+      <a href="D:/mini projects/FARM_EASY/index.html#aboutus">About Us</a>
+      <a href="D:/mini projects/FARM_EASY/index.html#footer">Contact Us</a>
+  </nav>
+  
+  
+</header>
+  <!--header ends-->
+  <!--home starts-->
+  <section class="home" id="home">
+      <div class="content">
+          <b><h3 style="font-size: 3rem;width: 60rem;">Farming is a<span> Profession </span>of Hope.</h3></b>
+          
+      </div>
+  </section>
+  
+
 
 <!-- Modal -->
 <div id="ReplyModal" class="modal fade" role="dialog">
@@ -25,17 +53,17 @@
       </div>
       <div class="modal-body">
         <form name="frm1" method="post">
-          <input type="hidden" id="commentid" name="Rcommentid">
-          <div class="form-group">
-            <label for="usr">Write your name:</label>
-            <input type="text" class="form-control" name="Rname" required>
-          </div>
-          <div class="form-group">
-            <label for="comment">Write your reply:</label>
-            <textarea class="form-control" rows="5" name="Rmsg" required></textarea>
-          </div>
-          <input type="button" id="btnreply" name="btnreply" class="btn btn-primary" value="Reply">
-        </form>
+            <input type="hidden" id="commentid" name="Rcommentid">
+        	<div class="form-group">
+        	  <label for="usr">Write your name:</label>
+        	  <input type="text" class="form-control" name="Rname" required>
+        	</div>
+            <div class="form-group">
+              <label for="comment">Write your reply:</label>
+              <textarea class="form-control" rows="5" name="Rmsg" required></textarea>
+            </div>
+        	 <input type="button" id="btnreply" name="btnreply" class="btn btn-primary" value="Reply">
+      </form>
       </div>
     </div>
 
@@ -44,39 +72,38 @@
 
 <div class="container">
 
-  <div class="panel panel-default" style="margin-top:50px">
-    <div class="panel-body">
-      <h3>FARM EASY - Farmers Community Forum</h3>
-      <hr>
-      <form name="frm" method="post">
+<div class="panel panel-default" style="margin-top:50px">
+  <div class="panel-body">
+    <h3>Community forum</h3>
+    <hr>
+    <form name="frm" method="post">
         <input type="hidden" id="commentid" name="Pcommentid" value="0">
-        <div class="form-group">
-          <label for="usr">Write your name:</label>
-          <input type="text" class="form-control" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="comment">Write your question:</label>
-          <textarea class="form-control" rows="5" name="msg" required></textarea>
-        </div>
-        <input type="button" id="butsave" name="save" class="btn btn-primary" value="Send">
-      </form>
+	<div class="form-group">
+	  <label for="usr">Write your name:</label>
+	  <input type="text" class="form-control" name="name" required>
+	</div>
+    <div class="form-group">
+      <label for="comment">Write your question:</label>
+      <textarea class="form-control" rows="5" name="msg" required></textarea>
     </div>
+	 <input type="button" id="butsave" name="save" class="btn btn-primary" value="Send">
+  </form>
   </div>
+</div>
+  
 
-
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <h4>Recent questions</h4>
-      <table class="table" id="MyTable" style="background-color: #edfafa; border:0px;border-radius:10px">
-        <tbody id="record">
-
-        </tbody>
-      </table>
-    </div>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h4>Recent questions</h4>           
+	<table class="table" id="MyTable" style="background-color: #edfafa; border:0px;border-radius:10px">
+	  <tbody id="record">
+		
+	  </tbody>
+	</table>
   </div>
+</div>
 
 </div>
 
 </body>
-
 </html>

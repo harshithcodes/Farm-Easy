@@ -23,9 +23,9 @@ function LoadData() {
 				}
 			}
 		},
-		// error: function (jqXHR, textStatus, errorThrown) {
-		// 	alert('Error: ' + textStatus + ' - ' + errorThrown);
-		// }
+		error: function (jqXHR, textStatus, errorThrown) {
+			//alert('Error: ' + textStatus + ' - ' + errorThrown);
+		}
 	});
 }
 
@@ -56,7 +56,7 @@ $(document).ready(function () {
 				},
 				cache: false,
 				success: function (dataResult) {
-					//console.log(dataResult)
+					console.log(dataResult)
 					var dataResult = JSON.parse(dataResult);
 					if (dataResult.statusCode == 200) {
 						$("#butsave").removeAttr("disabled");

@@ -4,14 +4,37 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+:root{
+    --green: #0b9150;
+    --black: #130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
 }
 
 body {
-    margin: 0
+    margin: 0;
+    background: #eee;
+    font-size: 1.4rem;
 }
 
 article,
@@ -1407,8 +1430,6 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff
@@ -1513,13 +1534,11 @@ hr {
 
 .h1,
 .h2,
-.h3,
 .h4,
 .h5,
 .h6,
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -1708,7 +1727,7 @@ mark {
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #286090
+    color: #0b9150
 }
 
 .text-success {
@@ -1754,7 +1773,7 @@ a.text-danger:hover {
 
 a.bg-primary:focus,
 a.bg-primary:hover {
-    background-color: #286090
+    background-color: #0b9150
 }
 
 .bg-success {
@@ -3338,15 +3357,15 @@ output {
 
 .form-control {
     display: block;
-    width: 50%;
+    width: 100%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
-    /* background-color: rgb(244, 244, 240); */
+    background-color: #fff;
     background-image: none;
-    /* border: 1px solid rgb(8, 8, 0); */
+    border: 1px solid #ccc;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -3359,7 +3378,7 @@ output {
 }
 
 .form-control:focus {
-    border-color: #66afe9;
+    border-color: #0b9150;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
@@ -3645,29 +3664,29 @@ textarea.input-lg {
 .has-success.checkbox-inline label,
 .has-success.radio label,
 .has-success.radio-inline label {
-    color: #f4f4f4
+    color: #3c763d
 }
 
 .has-success .form-control {
-    border-color: #fcfefc;
+    border-color: #3c763d;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
 }
 
 .has-success .form-control:focus {
-    border-color: #f6f8f6;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #f4f7f4;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #f8fbf8
+    border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168
 }
 
 .has-success .input-group-addon {
-    color: #f2f4f2;
+    color: #3c763d;
     background-color: #dff0d8;
-    border-color: #eff5ef
+    border-color: #3c763d
 }
 
 .has-success .form-control-feedback {
-    color: #edf0ed
+    color: #3c763d
 }
 
 .has-warning .checkbox,
@@ -3985,20 +4004,20 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-primary {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4
+    background-color: #fff;
+    border-color:#0b9150;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
     color: #fff;
-    background-color: #286090;
+    background-color: #0b9150;
     border-color: #122b40
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
+    background-color: #0b9150;
     border-color: #204d74
 }
 
@@ -4006,7 +4025,7 @@ fieldset[disabled] .btn-default:hover {
 .btn-primary:active,
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #286090;
+    background-color: #0b9150;
     background-image: none;
     border-color: #204d74
 }
@@ -4045,30 +4064,30 @@ fieldset[disabled] .btn-primary:hover {
 
 .btn-success {
     color: #fff;
-    background-color: #fcfffc;
-    border-color: #f3f6f3
+    background-color: #5cb85c;
+    border-color: #4cae4c
 }
 
 .btn-success.focus,
 .btn-success:focus {
     color: #fff;
-    background-color: #f8f8f8;
-    border-color: #f4f7f4
+    background-color: #449d44;
+    border-color: #255625
 }
 
 .btn-success:hover {
     color: #fff;
-    background-color: #e9ece9;
-    border-color: #e5e9e5
+    background-color: #449d44;
+    border-color: #398439
 }
 
 .btn-success.active,
 .btn-success:active,
 .open>.dropdown-toggle.btn-success {
     color: #fff;
-    background-color: #e7eee7;
+    background-color: #449d44;
     background-image: none;
-    border-color: #f5f6f5
+    border-color: #398439
 }
 
 .btn-success.active.focus,
@@ -4081,8 +4100,8 @@ fieldset[disabled] .btn-primary:hover {
 .open>.dropdown-toggle.btn-success:focus,
 .open>.dropdown-toggle.btn-success:hover {
     color: #fff;
-    background-color: #ecefec;
-    border-color: #eff3ef
+    background-color: #398439;
+    border-color: #255625
 }
 
 .btn-success.disabled.focus,
@@ -4094,12 +4113,12 @@ fieldset[disabled] .btn-primary:hover {
 fieldset[disabled] .btn-success.focus,
 fieldset[disabled] .btn-success:focus,
 fieldset[disabled] .btn-success:hover {
-    background-color: #f0f3f0;
-    border-color: #f8fbf8
+    background-color: #5cb85c;
+    border-color: #4cae4c
 }
 
 .btn-success .badge {
-    color: #f3f7f3;
+    color: #5cb85c;
     background-color: #fff
 }
 
@@ -6055,7 +6074,7 @@ a.label:hover {
 
 .label-primary[href]:focus,
 .label-primary[href]:hover {
-    background-color: #286090
+    background-color: #0b9150
 }
 
 .label-success {
@@ -7389,9 +7408,6 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.42857143;
     line-break: auto;
     text-align: left;
@@ -7404,7 +7420,6 @@ button.close {
     word-spacing: normal;
     word-wrap: normal;
     white-space: normal;
-    font-size: 12px;
     filter: alpha(opacity=0);
     opacity: 0
 }
@@ -7523,7 +7538,6 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.42857143;
