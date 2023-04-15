@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device_wisth,initial-scale=1.0">
+        <title>FARM EASY</title>
+
+        <!-- font link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- css file link-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    --green: #0b9150;
+    --black: #130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+}
+
+section{
+    padding: 2rem 9%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7 rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+.btn:hover{
+    background: var(--green);
+    color:#fff;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span{
+    background: var(--green);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%,0% 0%);
+}
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--black);
+}
+
+.logo {
+    padding: 0px;
+}
+
+.logo>img {
+    height: 4.5rem;
+    width: 23rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #fff;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+
+}
+
+.header .navbar a:hover{
+    color:var(--green)
+
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+.header .icons div:hover{
+    background: var(--green);
+    color: #fff;
+}
+#menu-btn{
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://identitasunhas.com/wp-content/uploads/2021/02/Himagro-Unhas-Kupas-Tuntas-Pembangunan-Pertanian-di-Sulsel.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+}
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3{
+    color: var(--black);
+    font-size: 3rem;
+}
+.home .content h3 span{
+    color: var(--green);
+}
+.home .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.pld .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:10.5rem;
+}
+
+.pld .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background:#fff;
+    display: none;
+}
+.pld .box-container .box:nth-child(1),
+.pld .box-container .box:nth-child(2),
+.pld .box-container .box:nth-child(3){
+    display: inline-block;
+}
+.pld .box-container img{
+    height:25rem;
+    width:50%;
+    object-fit:contain;
+    float: center;
+    margin: auto;
+}
+
+.pld .box-container .box .content{
+    padding:2rem;
+}
+
+.pld .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}
+
+.pld .box-container .box .content .icons a{
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.pld .box-container .box .content .icons a:hover{
+    color:var(--green);
+}
+
+.pld .box-container .box .content .icons a i{
+    color:var(--orange);
+    padding-right: .5rem;
+}
+
+.pld .box-container .box .content h3{
+    line-height: 1.8;
+    color:var(--black);
+    font-size: 2.2rem;
+    padding:.5rem 0;
+}
+
+.pld .box-container .box .content p{
+    line-height: 1.8;
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+}
+.pld .box-container .box .content ol{
+    line-height: 1.8;
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+/*media queries */
+@media (max-width:991px){
+
+html{
+    font-size:55%;
+}
+
+.header{
+    padding: 2rem;
+}
+section{
+    padding: 2rem;
+}
+
+}
+@media (max-width:768px){
+
+#menu-btn{
+    display: inline-block;
+}
+
+.header .navbar{
+    position: absolute;
+    top:110%; right: -110%;
+    width:30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+}
+.header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .navbar a{
+    font-size: 2rem;
+    margin:2rem 2.5rem;
+    display: block;
+}
+}
+@media (max-width:450px){
+
+html{
+    font-size:50%;
+}
+.heading{
+    font-size: 2.5rem;
+}
+
+}
+        </style>
+        
+    </head>
+    <body>
+        <!--header-->
+        <header class="header">
+            <a class="logo" href="index.html" style="padding:0px;">
+                <img src="https://i.ibb.co/c2GvK7c/logo1.png">
+            </a>
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#features">Services</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#footer">Contact Us</a>
+            </nav>
+            
+            
+        </header>
+            <!--header ends-->
+            <!--home starts-->
+            <section class="home" id="home">
+                <div class="content">
+                    <h3>Farming is a<span> Profession </span>of Hope.</h3>
+                    
+                </div>
+            </section>
+                <section class="pld" id="pld">
+
+                    <h1 class="heading"> Plant Disease :<span>{{title}}</span> </h1>
+
+                    <div class="box-container">
+
+                        <div class="box">
+                            <div class="content">
+                                
+                                <h3><b>
+                                    {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or
+                                    pred==24 or pred==25 or pred==28 or pred==38 %}
+                                    Tips to Grow Healthy Plants :
+                                    {% else %}
+                                    Brief Descritpion :
+                                    {% endif %}
+                                  </b></h3>
+                                <p>{{desc}}
+                                </p>
+                            </div>
+                        </div>
+                </section>
+                <section class="pld" id="pld">
+
+        <div class="box-container">
+            
+                    <img src={{image_url}} alt="">
+            
+        </div>
+        </section>
+
+    <section class="pld" id="pld">
+
+    <div class="box-container">
+
+   
+
+        <div class="box">
+            <div class="content">
+                
+                <h3><b>
+                    {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or
+                    pred==24 or pred==25 or pred==28 or pred==38 %}
+                    Benefits :
+                    {% else %}
+                    Prevent This Plant Disease By follow below steps :
+                    {% endif %}
+                  </b></h3>
+                <p>
+                  {{prevent}}
+                </p>
+            </div>
+        </div>
+
+        {% if pred!=4 %}
+        <div class="box">
+            <div class="content">
+          <center>
+            <h3><b>
+                {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or
+                pred==24 or pred==25 or pred==28 or pred==38 %}
+                Fertilizer :
+                {% else %}
+                Supplements :
+                {% endif %}
+              </b></h3>
+            <br>
+            <img src={{simage}} width="300" height="350">
+            <br>
+            <br>
+            <h3>{{sname}}</h3>
+
+            <a target="_blank" href={{buy_link}}><button type="button" class="btn">Buy Product</button></a>
+          </center>
+        </div>
+      </div>
+      {% endif %}
+        </div>
+                </section>
+                
+                
+
+
+            <!--fetaure sectoin ends-->
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--custom js file link-->
+        <script>
+            let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+}
+        </script>
+    </body>
+</html>
