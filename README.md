@@ -1,26 +1,42 @@
-# Farm Easy #
+***Hosted on http://farmeasy.info using AMD instance of Google Compute Engine service and a domain from Google Cloud Domains from Google Cloud Platform.***
 
-Farm Easy is a comprehensive platform that aims to help farmers improve their productivity, profitability, and sustainability. The platform includes seven modules, each of which offers a unique set of features and benefits to farmers.
+# Farm Easy <code><img height="30" src="https://i.ibb.co/c2GvK7c/logo1.png"></code>
 
-## Modules ##
-1. Crop plan module: Provides detailed information and guidance on the best practices for planting, fertilizing, and harvesting different crops.
-2. Plant disease detection module: Helps farmers quickly identify diseases that may be affecting their crops.
-3. Crop recommendation module: Analyzes the soil factors in a particular area and provides farmers with recommendations for crops that are best suited to their soil conditions.
-4. News feed module: Provides farmers with up-to-date news and information related to agriculture.
-5. Community forum module: Facilitates communication and collaboration between farmers.
-6. Products module: Provides farmers with access to unique farming tools and equipment.
-7. Weather conditions module: Provides up-to-date weather information.
+Farm Easy is a comprehensive platform that aims to help farmers improve their productivity, profitability, and sustainability. Farm Easy helps farmers overcome challenges such as lack of knowledge, crop failures, soil degradation, limited market access, and lack of access to resources. The platform provides farmers with access to valuable information, best practices, and expert advice through modules such as crop planning, disease detection, crop recommendation, news feed, community forum, products, and weather conditions. By addressing these problems, Farm Easy aims to promote sustainability and improve the livelihoods of farmers.
 
-## Technologies Used ##
+# Modules ☘️
+1. **Crop Plan** : Provides detailed information and guidance on the best practices for planting, fertilizing, and harvesting different crops.
+2. **Plant Disease Detection** : Helps farmers quickly identify diseases that may be affecting their crops.
+3. **Crop Recommendation** : Analyzes the soil factors in a particular area and provides farmers with recommendations for crops that are best suited to their soil conditions.
+4. **News Feed** : Provides farmers with up-to-date news and information related to agriculture.
+5. **Weather** : Provides up-to-date weather information.
+6. **Community Forum** : Facilitates communication and collaboration between farmers.
+7. **Products** : Provides farmers with access to unique farming tools and equipment.
+
+
+# Technologies Used 🌴
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="30" src="https://github.com/tomchen/stack-icons/raw/master/logos/bootstrap.svg"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png"></code>
+<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/pytorch/pytorch/39fa0b5d0a3b966a50dcd90b26e6c36942705d6d/docs/source/_static/img/pytorch-logo-dark.svg"></code>
+
+
+
 Farm Easy is a web application that uses a combination of technologies to deliver its services to farmers. The technologies used include:
 
 * Python Flask: A web framework used for building the back-end of the web application.
 * MySQL and PHP: A popular database management system used to store and retrieve data for the application with the help of PHP to make connection.
-* Machine Learning algorithms: Used in the Plant Disease Detection module to identify and diagnose plant diseases.
+* Machine Learning algorithms: CNN used in the Plant Disease Detection module to identify and diagnose plant diseases and SVM used in crop recommendation.
 * HTML, CSS, and JavaScript: The front-end technologies used to create the user interface of the application. 
 
 
-## Installation ##
+# Installation 🌿
 To install Farm Easy, follow these steps:
 * Clone the repository
 * Install the required dependencies by running pip install -r requirements.txt in *Flask directory*.
@@ -28,19 +44,21 @@ To install Farm Easy, follow these steps:
 * Run the app by running python app.py in *Flask directory* for *Plant Disease Detection* module.
 * Run the app by running python app.py in *FARM_EASY_NEW/crop recommendation* for *Crop Recommendation* module.
 
-## Usage ##
+# Usage 🍃
 To use Farm Easy, follow these steps:
+* Select the module that you want to use.
+* Follow the instructions provided by the module.
+* Enjoy the benefits of the platform!
 
-Select the module that you want to use.
-Follow the instructions provided by the module.
-Enjoy the benefits of the platform!
 
-## Contributing  ##
-If you want to contribute to Farm Easy, follow these steps:
 
-Fork the repository.
-Make your changes.
-Submit a pull request.
-
-## License ##
-Farm Easy is licensed under the MIT License.
+<h2> Meet the Developers👩‍💻👨‍💻</h3>
+ <table align = 'center'>
+ <tr>
+<td align="center"><a href="https://github.com/princeyuvi"><img src="https://avatars.githubusercontent.com/u/84708119?v=4" width="80px; alt=""/><br /><sub><b>Yuvaraj K M</b></sub></a></td>
+<td align="center"><a href="https://github.com/harshithcodes"><img src="https://avatars.githubusercontent.com/u/92664169?v=4" width="80px;" alt=""/><br /><sub><b> K Harshith</b></sub></a></td>
+<td align="center"><a href="https://github.com/shridharg2112"><img src="https://avatars.githubusercontent.com/u/130856034?v=4" width="80px;" alt=""/><br /><sub><b>Shridhar Gavadi</b></sub></a></td>
+<td align="center"><a href="https://github.com/Sudharshan2808"><img src="https://avatars.githubusercontent.com/u/86883817?v=4" width="80px;" alt=""/><br /><sub><b>Sudharshan R</b></sub></a></td>
+</tr>
+</table>
+</p>
