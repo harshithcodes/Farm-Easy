@@ -1,10 +1,13 @@
-***Hosted on http://farmeasy.info using AMD instance of Google Compute Engine service and a domain from Google Cloud Domains from Google Cloud Platform.***
+
 
 # Farm Easy <code><img height="30" src="https://i.ibb.co/c2GvK7c/logo1.png"></code>
+***Hosted on [farmeasy.info](http://www.farmeasy.info/) using AMD instance of Google Compute Engine service and a domain from Google Cloud Domains from Google Cloud Platform.***
+
+
 
 Farm Easy is a comprehensive platform that aims to help farmers improve their productivity, profitability, and sustainability. Farm Easy helps farmers overcome challenges such as lack of knowledge, crop failures, soil degradation, limited market access, and lack of access to resources. The platform provides farmers with access to valuable information, best practices, and expert advice through modules such as crop planning, disease detection, crop recommendation, news feed, community forum, products, and weather conditions. By addressing these problems, Farm Easy aims to promote sustainability and improve the livelihoods of farmers.
 
-# Modules ☘️
+## Modules ☘️
 1. **Crop Plan** : Provides detailed information and guidance on the best practices for planting, fertilizing, and harvesting different crops.
 2. **Plant Disease Detection** : Helps farmers quickly identify diseases that may be affecting their crops.
 3. **Crop Recommendation** : Analyzes the soil factors in a particular area and provides farmers with recommendations for crops that are best suited to their soil conditions.
@@ -14,7 +17,7 @@ Farm Easy is a comprehensive platform that aims to help farmers improve their pr
 7. **Products** : Provides farmers with access to unique farming tools and equipment.
 
 
-# Technologies Used 🌴
+## Technologies Used 🌴
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
@@ -36,7 +39,7 @@ Farm Easy is a web application that uses a combination of technologies to delive
 * HTML, CSS, and JavaScript: The front-end technologies used to create the user interface of the application. 
 
 
-# Installation 🌿
+## Installation 🌿
 To install Farm Easy, follow these steps:
 * Clone the repository
 * Install the required dependencies by running pip install -r requirements.txt in *Flask directory*.
@@ -44,7 +47,7 @@ To install Farm Easy, follow these steps:
 * Run the app by running python app.py in *Flask directory* for *Plant Disease Detection* module.
 * Run the app by running python app.py in *FARM_EASY_NEW/crop recommendation* for *Crop Recommendation* module.
 
-# Usage 🍃
+## Usage 🍃
 To use Farm Easy, follow these steps:
 * Select the module that you want to use.
 * Follow the instructions provided by the module.
@@ -52,7 +55,7 @@ To use Farm Easy, follow these steps:
 
 
 
-<h2> Meet the Developers👩‍💻👨‍💻</h3>
+<h2> Meet the Developers👩‍💻👨‍💻</h2>
  <table align = 'center'>
  <tr>
 <td align="center"><a href="https://github.com/princeyuvi"><img src="https://avatars.githubusercontent.com/u/84708119?v=4" width="80px; alt=""/><br /><sub><b>Yuvaraj K M</b></sub></a></td>
