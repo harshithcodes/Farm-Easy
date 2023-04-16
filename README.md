@@ -3,7 +3,7 @@
 # Farm Easy <code><img height="30" src="https://i.ibb.co/c2GvK7c/logo1.png"></code>
 ***Hosted on [farmeasy.info](http://www.farmeasy.info/) using AMD instance of Google Compute Engine service and a domain from Google Cloud Domains from Google Cloud Platform.***
 
-[Farm-Easy](https://github.com/harshithcodes/Farm-Easy/blob/main/first_page.jpeg)
+![Farm-Easy](https://github.com/harshithcodes/Farm-Easy/blob/main/first_page.jpeg)
 
 Farm Easy is a comprehensive platform that aims to help farmers improve their productivity, profitability, and sustainability. Farm Easy helps farmers overcome challenges such as lack of knowledge, crop failures, soil degradation, limited market access, and lack of access to resources. The platform provides farmers with access to valuable information, best practices, and expert advice through modules such as crop planning, disease detection, crop recommendation, news feed, community forum, products, and weather conditions. By addressing these problems, Farm Easy aims to promote sustainability and improve the livelihoods of farmers.
 
